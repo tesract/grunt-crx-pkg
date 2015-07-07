@@ -28,7 +28,7 @@ module.exports = function(grunt) {
     var options = this.options();
 
     if(!options.srcFolder && !options.destFolder){
-    	grunt.fail.fatal("openssl wasn't installed,please install first");
+    	grunt.fail.fatal("options not specified or srcFolder and destFolder not set");
     }
     try{
   		opensslCheck();
